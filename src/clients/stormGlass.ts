@@ -86,18 +86,6 @@ export class StormGlass {
 
       throw new ClientRequestError((err as Error).message);
     }
-
-    // catch (err: unknown) {
-    //   if ((err as AxiosError).response && (err as AxiosError).response?.data) {
-    //     throw new StormGlassResponseError(
-    //       `Error: ${JSON.stringify((err as AxiosError).response?.data)} Code: ${
-    //         (err as AxiosError).response?.status
-    //       }`
-    //     );
-    //   }
-
-    //   throw new ClientRequestError((err as Error).message);
-    // }
   }
 
   private normalizeResponse(
