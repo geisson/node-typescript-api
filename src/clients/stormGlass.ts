@@ -83,7 +83,6 @@ export class StormGlass {
           }`
         );
       }
-
       throw new ClientRequestError((err as Error).message);
     }
   }
