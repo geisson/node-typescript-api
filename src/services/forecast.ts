@@ -1,5 +1,5 @@
 import { ForecastPoint, StormGlass } from '@src/clients/stormGlass';
-import { InternalError } from '@src/utils/errors/internal-error';
+import { InternalError } from '@src/util/errors/internal-error';
 
 export enum BeachPosition {
   S = 'S',
