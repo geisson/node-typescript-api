@@ -75,7 +75,7 @@ export class StormGlass {
         }
       );
       return this.normalizeResponse(response.data);
-    } catch (err: unknown) {
+    } catch (err) {
       if (HTTPUtil.Request.isRequestError(err as AxiosError)) {
         throw new StormGlassResponseError(
           `Error: ${JSON.stringify((err as AxiosError).response?.data)} Code: ${

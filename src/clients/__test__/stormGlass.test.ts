@@ -3,7 +3,7 @@ import stormGlassNormalized3HoursFixture from '@test/fixtures/stormGlass_normali
 import * as stormGlassWeather3HoursFixture from '@test/fixtures/stormglass_water_3_hours.json';
 import * as HTTPUtil from '@src/util/request';
 
-jest.mock('@src/utils/request');
+jest.mock('@src/util/request');
 
 describe('StormGlass client', () => {
   const MockedRequestClass = HTTPUtil.Request as jest.Mocked<
